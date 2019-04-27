@@ -3715,7 +3715,7 @@ void reshape(int width, int height)   // Creamos funcion Reshape
 
 	// Tipo de Vista
 
-	glFrustum(-0.1, 0.1, -0.1, 0.1, 0.1, 170.0);
+	glFrustum(-0.1, 0.1, -0.1, 0.1, 0.1, 170000.0);
 
 	glMatrixMode(GL_MODELVIEW);							// Seleccionamos Modelview Matrix
 	glLoadIdentity();
@@ -3946,7 +3946,7 @@ int main(int argc, char** argv)   // Main Function
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Doble )
 	glutInitWindowSize(500, 500);	// Tamaño de la Ventana
 	glutInitWindowPosition(0, 0);	//Posicion de la Ventana
-	glutCreateWindow("Practica 11"); // Nombre de la Ventana
+	glutCreateWindow("Proyecto Final Feria"); // Nombre de la Ventana
 									 //glutFullScreen     ( );         // Full Screen
 	InitGL();						// Parametros iniciales de la aplicacion
 	glutDisplayFunc(display);  //Indicamos a Glut función de dibujo
