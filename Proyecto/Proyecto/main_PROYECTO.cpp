@@ -177,6 +177,9 @@ float movsol = 100.0;
 
 CModel soll;
 float movsoll = 100.0;
+
+CModel solll;
+float movsolll = 100.0;
 void saveFrame(void)
 {
 
@@ -1643,152 +1646,152 @@ void montana(void) {
 	//soportes
 	glPushMatrix();
 	glTranslatef(0, 0, -.4);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(0, 0, .4);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(10, 0, -.4);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(10, 0, .4);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(-10, 0, -.4);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(-10, 0, .4);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(23, 0, -.4);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(23, 0, .4);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(-23, 0, -.4);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(-23, 0, .4);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(26.6, 0, -2);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(26, 0, -2);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(26.6, 0, -11);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(26, 0, -11);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 
 	glPopMatrix();
 
 
 	glPushMatrix();
 	glTranslatef(16, 0, -18);
-	fig10.cilindro(.1, 3.7, 100, text2.GLindex);
+	fig10.cilindro(.1, 3.7, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(16, 0, -17.2);
-	fig10.cilindro(.1, 3.7, 100, text2.GLindex);
+	fig10.cilindro(.1, 3.7, 100, text11.GLindex);
 	glPopMatrix();
 
 
 	glPushMatrix();
 	glTranslatef(14, 0, -18);
-	fig10.cilindro(.1, 7, 100, text2.GLindex);
+	fig10.cilindro(.1, 7, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(14, 0, -17.2);
-	fig10.cilindro(.1, 7, 100, text2.GLindex);
+	fig10.cilindro(.1, 7, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(8, 0, -18);
-	fig10.cilindro(.1, 17, 100, text2.GLindex);
+	fig10.cilindro(.1, 17, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(8, 0, -17.2);
-	fig10.cilindro(.1, 17, 100, text2.GLindex);
+	fig10.cilindro(.1, 17, 100, text11.GLindex);
 	glPopMatrix();
 
 
 	glPushMatrix();
 	glTranslatef(4, 0, -18);
-	fig10.cilindro(.1, 12, 100, text2.GLindex);
+	fig10.cilindro(.1, 12, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(4, 0, -17.2);
-	fig10.cilindro(.1, 12, 100, text2.GLindex);
+	fig10.cilindro(.1, 12, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(-3, 0, -18);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(-3, 0, -17.2);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(-7, 0, -18);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(-7, 0, -17.2);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(-15, 0, -18);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPushMatrix();
 	glTranslatef(-15, 0, -17.2);
-	fig10.cilindro(.1, 1, 100, text2.GLindex);
+	fig10.cilindro(.1, 1, 100, text11.GLindex);
 	glPopMatrix();
 
 	glPopMatrix();
@@ -1804,9 +1807,9 @@ void carrito(void) {
 	glPushMatrix();
 	glEnable(GL_ALPHA_TEST);
 	glAlphaFunc(GL_GREATER, 0.1);
-	fig8.prisma2(text25.GLindex, text8.GLindex);
+	fig8.prisma2(text25.GLindex, text11.GLindex);
 	glTranslated(-2, 0, 0);
-	fig8.prisma2(text25.GLindex, text8.GLindex);
+	fig8.prisma2(text25.GLindex, text11.GLindex);
 	glDisable(GL_ALPHA_TEST);
 	glPopMatrix();
 
@@ -2887,7 +2890,7 @@ void tienda4(void)
 	//pared lateral 
 	glPushMatrix();
 	glTranslatef(8, 2.5, 25);
-	
+
 	glRotatef(-90, 0, 0, 1);
 	glScalef(5, 10, 0.1);
 	glDisable(GL_LIGHTING);
@@ -2912,9 +2915,34 @@ void tienda4(void)
 	glDisable(GL_LIGHTING);
 	fig20.prisma3(text21.GLindex, 0);
 	glEnable(GL_LIGHTING);
-	glPopMatrix();
 
 	glPopMatrix();
+	
+	glTranslatef(-3, 0, 10);
+	glScalef(0.1, 0.1, 0.1);
+	solll.GLrender(NULL, _SHADED, 1.0);
+	
+
+	
+	glTranslatef(0, 0, 400);
+	glRotatef(-90, 0, 1, 0);
+	solll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0, 0, 350);
+	glRotatef(-90, 0, 1, 0);
+	solll.GLrender(NULL, _SHADED, 1.0);
+	
+	glTranslatef(0, 0, 400);
+	glRotatef(-90, 0, 1, 0);
+	solll.GLrender(NULL, _SHADED, 1.0);
+	glDisable(GL_LIGHTING);
+	
+	
+	glPopMatrix();// punto donde se acaban las lamparas
+
+
+	
+
 }
 
 
@@ -2992,11 +3020,14 @@ void carrusel(void)
 	glTranslatef(250, 0, -80);
 	glRotatef(-75, 0, 1, 0);
 	sol.GLrender(NULL, _SHADED, 1.0);
+	
 	fig25.cilindro(3.1, 125, 1000, 2);
 	fig25.cilindro(3.1, -75, 1000, 2);
+	
 	glDisable(GL_LIGHTING);
 	
 	glPopMatrix();
+	
 	
 }
 
@@ -3135,6 +3166,10 @@ void InitGL(GLvoid)     // Inicializamos parametros
 
 	soll._3dsLoad("Blu.3ds");
 	soll.VertexNormals();
+	
+	
+	solll._3dsLoad("la.3ds");
+	solll.VertexNormals();
 	
 	//NEW////////////////////////////////////////////
 	KeyFrame[0].arriba = 0;
