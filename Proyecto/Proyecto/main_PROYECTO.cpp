@@ -132,6 +132,11 @@ CTexture text23;
 CTexture text24;
 CTexture text25;
 CTexture text26;
+CTexture text27;
+CTexture text28;
+CTexture text29;
+
+
 
 				//NEW///////////////////////////7
 
@@ -165,6 +170,7 @@ CFiguras fig22;
 CFiguras fig23;
 CFiguras fig24;
 CFiguras fig25;
+CFiguras fig26;
 
 CModel sol;
 float movsol = 100.0;
@@ -2839,14 +2845,89 @@ void tienda3(void)
 }
 
 
-void carrusel(void)
+
+
+
+void tienda4(void)
 {
-	glTranslatef(16, 0, 26);
+	glTranslatef(20, 0.1, 0.0);
+	glRotatef(360, 0, 1, 0);
+	glPushMatrix();
+	//piso 
 	glPushMatrix();
 	glTranslatef(8, 0.1, 20);
 	glScalef(10, 0.1, 10);
 	glDisable(GL_LIGHTING);
-	fig19.prisma3(text18.GLindex, 0); //textura carrusel piso
+	fig19.prisma3(text18.GLindex, 0);
+	glEnable(GL_LIGHTING);
+	glPopMatrix();
+
+	//pared atras
+	glPushMatrix();
+	glTranslatef(3, 2.5, 20);
+	glRotatef(90, 0, 0, 1);
+	glRotatef(90, 0, 1, 0);
+	glScalef(10, 0.1, 5);
+	glDisable(GL_LIGHTING);
+	fig17.prisma2(text19.GLindex, text19.GLindex);
+	glEnable(GL_LIGHTING);
+	glPopMatrix();
+
+	//fachada
+	glPushMatrix();
+	glTranslatef(13, 2.5, 20);
+	glRotatef(90, 0, 0, 1);
+	glRotatef(90, 0, 1, 0);
+	glScalef(10, 0.1, 5);
+	glDisable(GL_LIGHTING);
+	fig23.prisma3(text19.GLindex, text19.GLindex);
+	glEnable(GL_LIGHTING);
+	glPopMatrix();
+
+	//pared lateral 
+	glPushMatrix();
+	glTranslatef(8, 2.5, 25);
+	
+	glRotatef(-90, 0, 0, 1);
+	glScalef(5, 10, 0.1);
+	glDisable(GL_LIGHTING);
+	fig26.prisma3(90, text26.GLindex);
+	glEnable(GL_LIGHTING);
+	glPopMatrix();
+
+	//pared lateral
+	glPushMatrix();
+	glTranslatef(8, 2.5, 15);
+	glRotatef(90, 0, 1, 0);
+	glScalef(0.1, 5, 10);
+	glDisable(GL_LIGHTING);
+	fig18.prisma3(0, text19.GLindex);
+	glEnable(GL_LIGHTING);
+	glPopMatrix();
+
+	//techo
+	glPushMatrix();
+	glTranslatef(8, 5, 20);
+	glScalef(10, 0.1, 10);
+	glDisable(GL_LIGHTING);
+	fig20.prisma3(text21.GLindex, 0);
+	glEnable(GL_LIGHTING);
+	glPopMatrix();
+
+	glPopMatrix();
+}
+
+
+
+
+void carrusel(void)
+{
+	glTranslatef(00, 0, 23);
+	glPushMatrix();
+	glTranslatef(8, 0.1, 20);
+	glScalef(10, 0.1, 10);
+	glDisable(GL_LIGHTING);
+	fig19.prisma3(text9.GLindex, 0); //textura carrusel piso
 	glEnable(GL_LIGHTING);
 	glPopMatrix();
 
@@ -2879,6 +2960,7 @@ void carrusel(void)
 	glTranslatef(230, 80, 50);
 	glRotatef(210, 0, 1, 0);
 	sol.GLrender(NULL, _SHADED, 1.0);
+	//sol.GLIniTextures; //textura carrusel piso
 	fig25.cilindro(3.1, 125, 1000, 2);
 	fig25.cilindro(3.1, -75, 1000, 2);
 	
@@ -2912,9 +2994,10 @@ void carrusel(void)
 	sol.GLrender(NULL, _SHADED, 1.0);
 	fig25.cilindro(3.1, 125, 1000, 2);
 	fig25.cilindro(3.1, -75, 1000, 2);
-
+	glDisable(GL_LIGHTING);
+	
 	glPopMatrix();
-
+	
 }
 
 
@@ -3042,6 +3125,10 @@ void InitGL(GLvoid)     // Inicializamos parametros
 	text25.LoadTGA("trans.tga");
 	text25.BuildGLTexture();
 	text25.ReleaseImage();
+
+	text26.LoadTGA("pi.tga");
+	text26.BuildGLTexture();
+	text26.ReleaseImage();
 
 	sol._3dsLoad("caballo.3ds");
 	sol.VertexNormals();
@@ -3476,6 +3563,7 @@ tienda2();
 baños();
 
 tienda3();
+tienda4();
 
 carrusel();
 
