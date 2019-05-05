@@ -138,6 +138,7 @@ CTexture text29;
 
 
 
+
 				//NEW///////////////////////////7
 
 
@@ -180,6 +181,19 @@ float movsoll = 100.0;
 
 CModel solll;
 float movsolll = 100.0;
+
+
+CModel soolll;
+float movsoolll = 100.0;
+
+CModel sooll;
+float movsooll = 100.0;
+
+CModel pue;
+float movpue = 100.0;
+
+CModel ado;
+float movado = 100.0;
 void saveFrame(void)
 {
 
@@ -2912,18 +2926,18 @@ void tienda4(void)
 	glPushMatrix();
 	glTranslatef(8, 5, 20);
 	glScalef(10, 0.1, 10);
-	glDisable(GL_LIGHTING);
+
 	fig20.prisma3(text21.GLindex, 0);
-	glEnable(GL_LIGHTING);
+
 
 	glPopMatrix();
-	
+
 	glTranslatef(-3, 0, 10);
 	glScalef(0.1, 0.1, 0.1);
 	solll.GLrender(NULL, _SHADED, 1.0);
-	
 
-	
+
+
 	glTranslatef(0, 0, 400);
 	glRotatef(-90, 0, 1, 0);
 	solll.GLrender(NULL, _SHADED, 1.0);
@@ -2931,11 +2945,147 @@ void tienda4(void)
 	glTranslatef(0, 0, 350);
 	glRotatef(-90, 0, 1, 0);
 	solll.GLrender(NULL, _SHADED, 1.0);
-	
+
 	glTranslatef(0, 0, 400);
 	glRotatef(-90, 0, 1, 0);
 	solll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(-170, 0, -90);
+
+	glScalef(10.0010, 10.1, 10.010);
+
+
+	sooll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0, 5, 0);
 	glDisable(GL_LIGHTING);
+	glRotatef(270, 0, 1, 0);
+	glRotatef(90, 0, 0, 1);
+	glTranslatef(-1.1, 0, -1.15);
+	glScalef(2.5010, 2.51, 2.510);
+	fig18.prisma4(0, text27.GLindex);
+
+	glEnable(GL_LIGHTING);
+	glScalef(0.5010, 0.5, 0.5);
+	glRotatef(-90, 0, 0, 1);
+	glTranslatef(4, 0, 3);
+	pue.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(8, -1.0, 7);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0, 0.0, -10);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0, 0.0, -7);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(6, 0.0, 0);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(7, 0.0, 0);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(6, 0.0, 0);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+
+	glTranslatef(0, 0.0, 6);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+
+	glTranslatef(0, 0.0, 9);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+
+	glTranslatef(0, 0.0, 7);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+
+
+	glTranslatef(10, 1.0, 0);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(3, 1.0, 0);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+	glTranslatef(3, 0.0, 0);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+	glTranslatef(3, -1.0, 0);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(-3.5, -0.0, 3);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+	glTranslatef(0.0, -0.0, -6);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(-22.0, -1.0, 3);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(-6.0, -0.0, 0);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(-6.0, -0.0, 0);
+	soolll.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(-7.0, 5.0, -1.80);
+	glScalef(0.90, 0.90, 0.90);
+	glRotatef(10, 1, 1, 0);
+	ado.GLrender(NULL, _SHADED, 1.0);
+
+
+	glTranslatef(1.0, -2.0, -23.5);
+	glRotatef(360, 1, 1, 0);
+	glRotatef(-10, 0, 1, 1);
+	glTranslatef(2.0, 0.0, 0.0);
+	glRotatef(-20, 1, 1, 0);
+	glTranslatef(1.0, 0.0, 0.0);
+	ado.GLrender(NULL, _SHADED, 1.0);
+	glRotatef(90, 0, 1, 0);
+	glTranslatef(5.0, 0.0, 5.0);
+	glRotatef(30, 1, 1, 0);
+	glRotatef(-30, 1, 0, 0);
+
+	glTranslatef(2.0, 0.0, 2.0);
+	glRotatef(170, 0, 1, 0);
+	ado.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0.0, 0.0, -12.0);
+
+	ado.GLrender(NULL, _SHADED, 1.0);
+	glScalef(1, 1.0, 1);
+	glTranslatef(0.0, 0.0, -6.0);
+
+	ado.GLrender(NULL, _SHADED, 1.0);
+	glRotatef(90, 0, 1, 0);
+	glTranslatef(6.0, 0.0, 6.0);
+	ado.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0.0, 0.0, 12.0);
+	ado.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(1.0, 0.0, 10.0);
+	glRotatef(10, 1, 1, 0);
+	glTranslatef(-1.0, 0.0, -0.0);
+	ado.GLrender(NULL, _SHADED, 1.0);
+
+
+	glRotatef(90, 0, 1, 0);
+	glTranslatef(-7.0, 0.0, -6.0);
+	ado.GLrender(NULL, _SHADED, 1.0);
+
+
+
+	glTranslatef(0.0, 0.0, -10.0);
+	ado.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(1.0, 0.0, -10.0);
+	glRotatef(360, 1, 0, 0);
+
+	glRotatef(-20, 0, 1, 0);
+	ado.GLrender(NULL, _SHADED, 1.0);
+
+	glDisable(GL_LIGHTING);
+
 	
 	
 	glPopMatrix();// punto donde se acaban las lamparas
@@ -2954,9 +3104,9 @@ void carrusel(void)
 	glPushMatrix();
 	glTranslatef(8, 0.1, 20);
 	glScalef(10, 0.1, 10);
-	glDisable(GL_LIGHTING);
+	
 	fig19.prisma3(text9.GLindex, 0); //textura carrusel piso
-	glEnable(GL_LIGHTING);
+	
 	glPopMatrix();
 
 	//techo
@@ -2982,11 +3132,13 @@ void carrusel(void)
 	glPushMatrix();
 	glTranslatef(10, 0.1, 22);
 	//glRotatef(180, 1, 0, 0);
+	
 	fig25.cilindro(0.3, 6, 100, 10);
     glRotatef(mundo, 0, 1, 0);
 	glScalef(0.0285, 0.0285, 0.0285);
 	glTranslatef(230, 80, 50);
 	glRotatef(210, 0, 1, 0);
+	glEnable(GL_LIGHTING);
 	sol.GLrender(NULL, _SHADED, 1.0);
 	//sol.GLIniTextures; //textura carrusel piso
 	fig25.cilindro(3.1, 125, 1000, 2);
@@ -3074,10 +3226,9 @@ void InitGL(GLvoid)     // Inicializamos parametros
 	glEnable(GL_NORMALIZE);
 
 
-	text1.LoadBMP("sky.bmp");
+	text1.LoadTGA("mon.tga");
 	text1.BuildGLTexture();
 	text1.ReleaseImage();
-
 
 
 	text3.LoadTGA("city/arrow.tga");
@@ -3088,7 +3239,7 @@ void InitGL(GLvoid)     // Inicializamos parametros
 	text4.BuildGLTexture();
 	text4.ReleaseImage();
 
-	text5.LoadTGA("verde.tga");
+	text5.LoadTGA("grass.tga");
 	text5.BuildGLTexture();
 	text5.ReleaseImage();
 
@@ -3161,6 +3312,11 @@ void InitGL(GLvoid)     // Inicializamos parametros
 	text26.BuildGLTexture();
 	text26.ReleaseImage();
 
+
+	text27.LoadTGA("ent.tga");
+	text27.BuildGLTexture();
+	text27.ReleaseImage();
+
 	sol._3dsLoad("caballo.3ds");
 	sol.VertexNormals();
 
@@ -3170,6 +3326,18 @@ void InitGL(GLvoid)     // Inicializamos parametros
 	
 	solll._3dsLoad("la.3ds");
 	solll.VertexNormals();
+
+	soolll._3dsLoad("glo.3ds");
+	soolll.VertexNormals();
+
+	sooll._3dsLoad("cart.3ds");
+	sooll.VertexNormals();
+
+	pue._3dsLoad("pue.3ds");
+	pue.VertexNormals();
+
+	ado._3dsLoad("ad.3ds");
+	ado.VertexNormals();
 	
 	//NEW////////////////////////////////////////////
 	KeyFrame[0].arriba = 0;
@@ -3263,7 +3431,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	glPushMatrix(); //Creamos cielo
 	glDisable(GL_LIGHTING);
 	glTranslatef(0, 60, 0);
-	fig1.skybox(200.0, 130.0, 200.0, text1.GLindex);
+	fig3.skybox(200.0, 130.0, 200.0, text1.GLindex);
 	glEnable(GL_LIGHTING);
 	glPopMatrix();
 
