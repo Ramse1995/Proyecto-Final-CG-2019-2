@@ -194,6 +194,19 @@ float movpue = 100.0;
 
 CModel ado;
 float movado = 100.0;
+
+CModel ca;
+float movca = 100.0;
+
+CModel cer;
+float movcer = 100.0;
+
+
+CModel me;
+float movme = 100.0;
+
+CModel si;
+float movsi = 100.0;
 void saveFrame(void)
 {
 
@@ -1819,12 +1832,18 @@ void carrito(void) {
 
 	glPopMatrix();
 	glPushMatrix();
-	glEnable(GL_ALPHA_TEST);
-	glAlphaFunc(GL_GREATER, 0.1);
-	fig8.prisma2(text25.GLindex, text11.GLindex);
-	glTranslated(-2, 0, 0);
-	fig8.prisma2(text25.GLindex, text11.GLindex);
-	glDisable(GL_ALPHA_TEST);
+	//glEnable(GL_ALPHA_TEST);
+	//glAlphaFunc(GL_GREATER, 0.1);
+	
+	
+	glEnable(GL_LIGHTING);
+	glRotatef(90, 0, 1, 0);
+	glTranslatef(0, 1, 0);
+	ca.GLrender(NULL, _SHADED, 1.0);
+	glDisable(GL_LIGHTING);
+	//fig8.prisma2(text25.GLindex, text11.GLindex);
+	
+	//glDisable(GL_ALPHA_TEST);
 	glPopMatrix();
 
 
@@ -3084,6 +3103,151 @@ void tienda4(void)
 	glRotatef(-20, 0, 1, 0);
 	ado.GLrender(NULL, _SHADED, 1.0);
 
+	glTranslatef(0,-7,0);
+	glRotatef(15, 0, 1, 0);
+	glRotatef(-5, 0, 0, 1);
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0, 0, 6);
+	cer.GLrender(NULL, _SHADED, 1.0);
+	glRotatef(90, 0, 1, 0);
+	glTranslatef(-4, 0, -4);
+	cer.GLrender(NULL, _SHADED, 1.0);
+	glTranslatef(0, 0, -8);
+	cer.GLrender(NULL, _SHADED, 1.0);
+	glTranslatef(0, 0, -8);
+	cer.GLrender(NULL, _SHADED, 1.0);
+	glTranslatef(-3.65, 0, -0);
+	cer.GLrender(NULL, _SHADED, 1.0);
+	glTranslatef(0, 0, 8);
+	cer.GLrender(NULL, _SHADED, 1.0);
+	glTranslatef(0, 0, 8);
+	cer.GLrender(NULL, _SHADED, 1.0);
+	glRotatef(90, 0, 1, 0);
+	glTranslatef(-4.0, 0, -4);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0.0, 0, -6);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+	glRotatef(90, 0, 1, 0);
+	glTranslatef(4.0, 0, -4);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0.0, 0, -2.80);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+	glTranslatef(0.0, 0, -12);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0.0, 0, -8);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+	glTranslatef(0.0, 0, -5.5);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+	glRotatef(90, 0, 1, 0);
+	glTranslatef(4.5, 0, -4);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+
+	glTranslatef(0, 0, -6);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+
+	glRotatef(90, 0, 1, 0);
+	glTranslatef(4.0, 0, 4);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0.0, 0, 5.4);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+
+
+	glTranslatef(4.0, 0, 0);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+
+	glTranslatef(0.0, 0, -5.4);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+	glRotatef(90, 0, 1, 0);
+	glTranslatef(4.0, 0, 4);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+
+	glTranslatef(0, 0, 6.5);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+
+	glRotatef(90, 0, 1, 0);
+	glTranslatef(-4.0, 0, 4);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0, 0, 8.2);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+
+	glTranslatef(0, 0, 12.3);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+
+	glTranslatef(0, 0, 8.0);
+
+	cer.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(38, 0, -15.0);
+	glRotatef(90, 0, 1, 0);
+	glScalef(0.80,0.80,0.80);
+	me.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0, 0, 9);
+	me.GLrender(NULL, _SHADED, 1.0);
+	glScalef(0.50, 0.50, 0.50);
+	glTranslatef(-4, 0, 2);
+	si.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0, 0, -4);
+	si.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0, 0, -14);
+	si.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0, 0, -4);
+	si.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(8, 0, 0);
+	glRotatef(180,0,1,0);
+	si.GLrender(NULL, _SHADED, 1.0);
+
+
+	glTranslatef(0, 0, -4);
+	si.GLrender(NULL, _SHADED, 1.0);
+
+
+	glTranslatef(0, 0, -14);
+	si.GLrender(NULL, _SHADED, 1.0);
+
+	glTranslatef(0, 0, -4);
+	si.GLrender(NULL, _SHADED, 1.0);
+
+
 	glDisable(GL_LIGHTING);
 
 	
@@ -3258,7 +3422,7 @@ void InitGL(GLvoid)     // Inicializamos parametros
 	text9.LoadTGA("texturas/skyscreamer/metalazul.tga");
 	text9.BuildGLTexture();
 	text9.ReleaseImage();
-	 
+
 	text10.LoadTGA("mundo.tga");
 	text10.BuildGLTexture();
 	text10.ReleaseImage();
@@ -3279,7 +3443,7 @@ void InitGL(GLvoid)     // Inicializamos parametros
 	text18.BuildGLTexture();
 	text18.ReleaseImage();
 
-	
+
 	text19.LoadTGA("ladrillo.tga");
 	text19.BuildGLTexture();
 	text19.ReleaseImage();
@@ -3317,13 +3481,18 @@ void InitGL(GLvoid)     // Inicializamos parametros
 	text27.BuildGLTexture();
 	text27.ReleaseImage();
 
+
+	text28.LoadTGA("ta.tga");
+	text28.BuildGLTexture();
+	text28.ReleaseImage();
+
 	sol._3dsLoad("caballo.3ds");
 	sol.VertexNormals();
 
 	soll._3dsLoad("Blu.3ds");
 	soll.VertexNormals();
-	
-	
+
+
 	solll._3dsLoad("la.3ds");
 	solll.VertexNormals();
 
@@ -3338,7 +3507,19 @@ void InitGL(GLvoid)     // Inicializamos parametros
 
 	ado._3dsLoad("ad.3ds");
 	ado.VertexNormals();
-	
+
+	ca._3dsLoad("carrito.3ds");
+	ca.VertexNormals();
+
+	cer._3dsLoad("cerca.3ds");
+	cer.VertexNormals();
+
+	me._3dsLoad("mesa.3ds");
+	me.VertexNormals();
+
+	si._3dsLoad("silla.3ds");
+	si.VertexNormals();
+
 	//NEW////////////////////////////////////////////
 	KeyFrame[0].arriba = 0;
 	KeyFrame[0].horizontal = 0;
